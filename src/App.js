@@ -5,7 +5,7 @@ import ProjectCard from "./Components/ProjectCard";
 import WorkCard from "./Components/WorkCard";
 import {categories, projects, workExperience, achievements} from './Data';
 import AchievementCard from "./Components/AchievementCard";
-import Resume from './Harshithsesham_Computer-Science-Owl-final.pdf'
+import Resume from './Harshithsesham_Resume_final_apply.pdf'
 
 
 function App() {
@@ -85,7 +85,7 @@ function App() {
 							</div>
 
 							<a className="btn btn-outline-danger mt-4 px-5" role="button"
-							   href={Resume} download={"Harshithsesham_Computer-Science-Owl-final.pdf"}>
+							   href={Resume} download={"Harshithsesham_Resume_final_apply.pdf"}>
 								<i className="bi bi-download"/> Résumé
 							</a>
 						</div>
@@ -98,10 +98,7 @@ function App() {
 				<section id="about" className="mt-3">
 					<h2>About Me</h2>
 					<p className="lead">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci autem corporis
-						dolore
-						eaque eius error esse expedita iure laboriosam magni, minima modi nobis nulla qui repellat sequi
-						tempore velit?
+						I am a fun loving Software Development Engineer at Amazon with 2 years of experience building distributed systems and large-scale web applications. Passionate about solving complex technical challenges, driving innovation, and creating impactful, scalable software solutions that enhance customer experiences.
 					</p>
 				</section>
 
@@ -151,20 +148,20 @@ function App() {
 					</div>
 				</section>
 
-				{/*	ACHIEVEMENTS */}
-				<section id="achievements" className="mt-5">
-					<h2>Achievements</h2>
+				{/*/!*	ACHIEVEMENTS *!/*/}
+				{/*<section id="achievements" className="mt-5">*/}
+				{/*	<h2>Achievements</h2>*/}
 
-					<div className="row g-2">
-						{
-							achievements.map(achievement => (
-								<div className="col-12 col-md-6 col-lg-4">
-									<AchievementCard achievement={achievement}/>
-								</div>
-							))
-						}
-					</div>
-				</section>
+				{/*	<div className="row g-2">*/}
+				{/*		{*/}
+				{/*			achievements.map(achievement => (*/}
+				{/*				<div className="col-12 col-md-6 col-lg-4">*/}
+				{/*					<AchievementCard achievement={achievement}/>*/}
+				{/*				</div>*/}
+				{/*			))*/}
+				{/*		}*/}
+				{/*	</div>*/}
+				{/*</section>*/}
 			</div>
 
 			{/*	Back to top */}

@@ -1,118 +1,111 @@
 const categories = [
 	["All", "light"],
-	["Android", "success"],
-	["Python", "warning"],
-	["HTML/CSS", "primary"],
-	["Javascript", "danger"],
+	["AI", "success"],
+	["Web-Development", "warning"],
+	// ["HTML/CSS", "primary"],
+	// ["Javascript", "danger"],
 	// ["C/C++", "info"]
 ]
 
 const projects = [
 	{
-		"img": require('./img/projects/ANTM.jpg'),
-		"title": "Antmanirbhar Tarun Manch (Self Reliance)",
-		"description": "A non-profit initiative to provide a platform for the newly launched and growing local businesses in Indore.",
-		"link": "https://play.google.com/store/apps/details?id=com.ninkuk.atmanirbharbharat_tarunmanch&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1&pli=1",
-		"category": "Android"
+		"img": require('./img/projects/chatapp.png'),
+		"title": "Chat App - Object-oriented programming",
+		"description": "Built a browser-based chat app for my Grad class COMP 504: Graduate Object-Oriented Programming and Design. The system allows users to join rooms and send messages, backed by cloud-based data storage and subscription management services for seamless operation and scalability.",
+		"link": "https://direwolve-chatapp.surge.sh/",
+		"category": "Web-Development"
 	},
 	{
-		"img": "",
-		"title": "NASA Psyche - Visualizing Space Data Footprints",
-		"description": "Tool created for the NASA Psyche Mission to calculate geometrical outlines of an asteroid given a specific image in time.",
+		"img": require('./img/projects/harshithsesham-portfolio.png'),
+		"title": "My Portfolio Website",
+		"description": "Developed a dynamic, responsive personal portfolio using React to showcase skills, projects, and professional journey. The portfolio features a modern design with interactive animations and a fully responsive layout for optimal cross-device experience. Built with React’s component-based architecture for scalability and efficient updates.",
 		"link": "https://github.com/Ninkuk/2022_19A_Visualizing-Space-Data-Footprints#nasa-psyche-capstone-19a-visualizing-space-data-footprints-copper-class---2022",
-		"category": "Python"
-	},
-	// {
-	// 	"img": "",
-	// 	"title": "Misinformation Dashboard",
-	// 	"description": "Dashboard to visualize the characteristics and influence of misinformation spread",
-	// 	"link": "",
-	// 	"category": "Javascript Python"
-	// },
-	{
-		"img": "",
-		"title": "Psyche Inspired Review App",
-		"description": "An internal system to submit and review NASA Psyche Inspired Intern Applications",
-		"link": "https://psyche.asu.edu/get-involved/psyche-inspired/",
-		"category": "HTML/CSS"
+		"category": "Web-Development"
 	},
 	{
-		"img": "",
-		"title": "Path to FBLA",
-		"description": "Android app which helps prepare for objective tests hosted by the Future Business Leaders of America. The user can take quizzes from 10 different categories with over 150 questions.",
+		"img": require('./img/projects/video-captioning.png'),
+		"title": "Video Captioning System using Tensorflow",
+		"description": "Implemented a video captioning system using the VGG16 pre-trained neural network for feature extraction and a sequence-to-sequence architecture with RNN/LSTM encoders and decoders in TensorFlow. Enhanced real-time text prediction with greedy and beam search techniques. Optimized the model with custom data generators to address memory challenges, achieving an overall caption-validation score exceeding 75% using BLEU, ROUGE-L, and CIDEr metrics.",
+		"link": "https://drive.google.com/file/d/1H73MAzIUoOt-tPnQKFCfdHKUqVbI0BCu/view?usp=drive_link",
+		"category": "AI"
+	},
+	{
+		"img": require('./img/projects/rice-book.png'),
+		"title": "Social media app(Ricebook)",
+		"description": "Developed a full-stack Facebook-like web application with a React.js frontend and a Node.js backend, hosted on Heroku for reliable deployment. Designed a modern, cohesive interface using CSS and Semantic UI for a visually appealing user experience. The project highlights my ability to build scalable, functional, and aesthetically pleasing web applications.",
 		"link": "https://github.com/Ninkuk/FBLA_Mobile_App_Development",
-		"category": "HTML/CSS"
+		"category": "Web-Development"
 	},
 	{
-		"img": require('./img/projects/wallpaper.jpg'),
-		"title": "Wallpaper Automation",
-		"description": "Python scripts to download and set images from popular stock photography as background wallpapers. Use along with Linux cron or Windows task scheduler to create a slideshow of fresh new wallpapers.",
-		"link": "https://github.com/Ninkuk/Wallpaper-Automation",
-		"category": "Python"
+		"img": require('./img/projects/sign-language-ricognition-app.png'),
+		"title": "Real Time Fingerspelled Sign Language Recognition App",
+		"description": "Developed a Sign Language Recognition app using deep learning to translate hand gestures into text or speech, bridging communication gaps for individuals with hearing or speech impairments. The app leverages a CNN with transfer learning on pre-trained ImageNet models for high-accuracy gesture recognition. It processes live or pre-captured images in real-time, providing a user-friendly, accessible tool for inclusive communication.",
+		"link": "",
+		"category": "AI"
 	},
 	{
-		"img": "",
-		"title": "Formula 1 Dashboard",
-		"description": "",
-		"link": "https://ninkuk.github.io/F1-Viz-Dashboard/",
-		"category": "Javascript"
+		"img": require('./img/projects/clip_diagram2-1024x528.png'),
+		"title": "A multi-modal vision and language model to detect harmful social media memes",
+		"description": "Proposed the use of CLIP (Contrastive Language–Image Pre-training), OpenAI’s multimodal model, to analyze multimodal hate speech and benchmark its performance against state-of-the-art models by Facebook AI. Testing on 500 validation samples yielded a surprising 57.8% accuracy without any training, demonstrating performance comparable to Facebook’s research findings.",
+		"link": "",
+		"category": "AI"
 	},
-	{
-		"img": "",
-		"title": "American Food Access Visualizations",
-		"description": "",
-		"link": "https://github.com/Ninkuk/American-Food-Access-Visualization",
-		"category": "Javascript"
-	},
-	{
-		"img": require('./img/projects/asu.png'),
-		"title": "ASU Automation Scripts",
-		"description": "Python scripts to automate myASU and Canvas tasks. Includes utilities for class search and availability.",
-		"link": "https://github.com/Ninkuk/ASU_Scripts",
-		"category": "Python"
-	},
-	// {
-	// 	"img": "",
-	// 	"title": "Photoshelter Migration",
-	// 	"description": "",
-	// 	"link": "",
-	// 	"category": "Python"
-	// },
+
 ]
 
 const workExperience = [
 	{
-		"title": "Research Programming Intern",
-		"description": "",
-		"startDate": "",
-		"endDate": "",
+		"img": require('./img/projects/amazon-logo-700x394.jpg'),
+		"title": "Software Development Engineer",
+		"description": "Aug 2023 - Present",
 		"link": "",
-		"category": "Internship"
+		"category": "Python"
 	},
 	{
-		"title": "Misinformation Research Lab",
-		"description": "",
-		"startDate": "",
-		"endDate": "",
+		"img": require('./img/projects/spurcroft_inc_cover.jpeg'),
+		"title": "Software Development Engineer",
+		"description": "Jan 2023 - Aug 2023",
 		"link": "",
-		"category": "Research"
+		"category": "Python"
 	},
 	{
-		"title": "Learning Research Lab",
-		"description": "",
-		"startDate": "",
-		"endDate": "",
+		"img": require('./img/projects/rice.jpeg'),
+		"title": "Graduate Teaching Assistant",
+		"description": "Aug 2022 - Dec 2022",
 		"link": "",
-		"category": "Research"
+		"category": "Python"
 	},
 	{
-		"title": "Student Graphic Designer",
-		"description": "",
-		"startDate": "",
-		"endDate": "",
+		"img": require('./img/projects/tcs.png'),
+		"title": "Software Engineer Intern",
+		"description": "Jun 2022 - Aug 2022",
 		"link": "",
-		"category": "Student Job"
-	},
+		"category": "Python"
+	}
+	// {
+	// 	"title": "Misinformation Research Lab",
+	// 	"description": "",
+	// 	"startDate": "",
+	// 	"endDate": "",
+	// 	"link": "",
+	// 	"category": "Research"
+	// },
+	// {
+	// 	"title": "Learning Research Lab",
+	// 	"description": "",
+	// 	"startDate": "",
+	// 	"endDate": "",
+	// 	"link": "",
+	// 	"category": "Research"
+	// },
+	// {
+	// 	"title": "Student Graphic Designer",
+	// 	"description": "",
+	// 	"startDate": "",
+	// 	"endDate": "",
+	// 	"link": "",
+	// 	"category": "Student Job"
+	// },
 ]
 
 const achievements = [
